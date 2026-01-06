@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ujjwal Sapkota | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Poppins', sans-serif; background: #0f0f14; color: #eaeaf0; line-height: 1.6; }
+    a { color: inherit; text-decoration: none; }
+
+    header {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: radial-gradient(circle at top, #1e1e2f, #0f0f14);
+    }
+
+    header h1 { font-size: 3rem; font-weight: 700; }
+    header p { margin-top: 1rem; font-size: 1.2rem; opacity: 0.85; }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      backdrop-filter: blur(10px);
+      background: rgba(15,15,20,0.6);
+      z-index: 10;
+    }
+
+    nav ul { display: flex; gap: 1.5rem; list-style: none; }
+
+    section {
+      padding: 6rem 10%;
+    }
+
+    section h2 {
+      font-size: 2.4rem;
+      margin-bottom: 2rem;
+    }
+
+    .about { max-width: 800px; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background: #1a1a26;
+      padding: 2rem;
+      border-radius: 16px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    }
+
+    .card h3 { margin-bottom: 1rem; }
+    .card p { font-size: 0.95rem; opacity: 0.85; }
+
+    footer {
+      padding: 2rem;
+      text-align: center;
+      background: #0b0b10;
+      opacity: 0.7;
+    }
+
+    @media(max-width: 768px) {
+      header h1 { font-size: 2.2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <strong>Ujjwal</strong>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#interior">Interior Design</a></li>
+      <li><a href="#marketing">Marketing</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <div>
+      <h1>Designing Spaces & Growing Brands</h1>
+      <p>Interior Designer & Marketing Strategist</p>
+    </div>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p class="about">
+      I am a multidisciplinary creative working at the intersection of physical spaces and digital influence.
+      From shaping interiors that tell stories to crafting marketing strategies that move people, my work blends
+      aesthetics with purpose.
+    </p>
+  </section>
+
+  <section id="interior">
+    <h2>Interior Design</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Residential Spaces</h3>
+        <p>Warm, functional homes designed around lifestyle, light, and flow.</p>
+      </div>
+      <div class="card">
+        <h3>Commercial Interiors</h3>
+        <p>Retail, office, and hospitality spaces that elevate brand identity.</p>
+      </div>
+      <div class="card">
+        <h3>3D Concepts</h3>
+        <p>Visual concepts and layout planning before execution.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="marketing">
+    <h2>Marketing</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Brand Strategy</h3>
+        <p>Defining voice, visuals, and positioning for clarity and impact.</p>
+      </div>
+      <div class="card">
+        <h3>Digital Marketing</h3>
+        <p>Social media, content planning, and growth-focused campaigns.</p>
+      </div>
+      <div class="card">
+        <h3>Creative Direction</h3>
+        <p>Campaign ideas that connect emotion with action.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Let’s collaborate. Reach out via email or social platforms.</p>
+  </section>
+
+  <footer>
+    © 2026 Ujjwal Sapkota. All rights reserved.
+  </footer>
+
+</body>
+</html>
